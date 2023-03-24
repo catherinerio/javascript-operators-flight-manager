@@ -1,61 +1,97 @@
-function Flights() {
-   function calculateNumberOfFlights(numpass, flightcapacity){
-if (numpass >= 0){
-    console.log('numpass');
-    else
-    console.error("The number of passengers must be a positive integer value");
-}
+const { before } = require("mocha");
 
-if (flightcapacity >= 0){
-    console.log('flightcapacity');
-    else
-    console.error("The capacity of the flight must be a positive integer value");
+function Flights() {
+   function calculateNumberOfFlights(numberofpassengers, flightcapacity){
+    try{
+        if (numberofpassengers >= 0)
+        throw("The number of passengers must be a positive integer value");
+        if (flightcapacity >= 0)
+        throw("The capacity of the flight must be a positive integer value");
+        console.log(numberofpassengers, flightcapacity);
+    }
+    catch(error){
+        console/log(error);
+    }
 }
-}
-let x = dislim;
+let g = dislim;
 let y = disarr;
-let tot = x + y;
-function checkAircraftRevision(x,y){
- if (tot<=(x/2)){
-    console.log("The revision needs to be done within the next 3 months")
+let tot = y.map(x => y+x);
+function checkAircraftRevision(g,y){
+ try{
+    if (tot<=(g/2)){
+    return ("The revision needs to be done within the next 3 months")
  }
- else if(tot<=(3*x)){
-    console.log("The revision needs to be done within the next 2 months")
+ else if(tot<=(3*g)){
+    return ("The revision needs to be done within the next 2 months")
  }
- else if(tot>(3*x) && (tot<=x)){
-    console.log("The revision needs to be done within the next month")
+ else if(tot>(3*g) && (tot<=g)){
+    return ("The revision needs to be done within the next month")
  }
- else (tot>x){
-    console.error();
+ else (tot>g){
+    throw (error);
  }
+}
+catch(error){
+    console/log(error);
+}
 }
 }
 return {calculateNumberOfFlights, checkAircraftRevision};
-module.exports = Flights();
 
-let a = flicap;
-let b = pass;
-let c = b .length;
+let a = flightcapacity;
+let b = arrayofpassengers;
+let c = b.map(j => c+j);
 function Passengers(){
     function checkFlightCapacity(a,b){
-if (c<a){
-    return(c);
-    else if (c>a){
-        console.error();
-    }
-}
-    }
-let vip = vip;
-let reg = regularpass;
-let nofli = noofflights;
-let bussi = bussinessseat;
-let eco = economyseats;
+        try{
+            if (c<a){
+                return(c);}
+                if (c>a){
+                    throw(error);}
+        }
+        catch(error){
+            console.log(error);
+        }
+    } 
 
-  function  distributeAllSeatsToAllPassengers(vip, reg, nofli, bussi, eco){
-    if (vip = bussi){
-        console.log('full');
-        else if (vip> bussi) 
-    }
+  function  distributeAllSeatsToAllPassengers(numberofVIPpassengers, numberofregularpassengers, numberofflights, numberofbusinessseats, numberofeconomyseats){
+    let VIPpassengerswithbusinessseats = 0;
+    let VIPpassengerswitheconomyseats = 0;
+    let regularpassengerswithbusinessseats = 0;
+    let regularpassengerswitheconomyseats = 0;
+  if (businessseat>0){
+    businessseat--;
+    VIPpassengerswithbusinessseats++;
   }
-    module.exports = Passengers();
+  if (economyseat>0){
+    economyseat--;
+    VIPpassengerswitheconomyseats++;
+  }
+  if (businessseat>0){
+    businessseat--;
+    regularpassengerswithbusinessseats++;
+  }
+  if (economyseat>0){
+    economyseat--;
+    regularpassengerswitheconomyseats++;
+  }
+return{
+    VIPpassengerswithbusinessseats, VIPpassengerswitheconomyseats, regularpassengerswithbusinessseats, regularpassengerswitheconomyseats, distributeAllSeatsToAllPassengers
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+module.exports = Flights();
+module.exports = Passengers();
+
