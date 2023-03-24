@@ -76,22 +76,10 @@ function Passengers(){
     regularpassengerswitheconomyseats++;
   }
 return{
-    VIPpassengerswithbusinessseats, VIPpassengerswitheconomyseats, regularpassengerswithbusinessseats, regularpassengerswitheconomyseats, distributeAllSeatsToAllPassengers
+    VIPpassengerswithbusinessseats, VIPpassengerswitheconomyseats, regularpassengerswithbusinessseats, regularpassengerswitheconomyseats
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
   }
+return{distributeAllSeatsToAllPassengers}
+}
 module.exports = Flights();
 module.exports = Passengers();
-}
