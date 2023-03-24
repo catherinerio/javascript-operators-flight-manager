@@ -95,3 +95,4 @@ return{
 module.exports = Flights();
 module.exports = Passengers();
 }
+npx mocha ./test/module2.test.js
