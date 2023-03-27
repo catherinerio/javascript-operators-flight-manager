@@ -1,11 +1,10 @@
-const { before } = require("mocha");
-
+"use strict"
 function Flights() {
    function calculateNumberOfFlights(numberofpassengers, flightcapacity){
     try{
-        if (numberofpassengers >= 0)
+        if ((numberofpassengers.value> 0) && (numberofpassengers .value .isInteger(numberofpassengers)))
         throw new error("The number of passengers must be a positive integer value");
-        if (flightcapacity >= 0)
+        if ((flightcapacity.value > 0)&& (flightcapacity.value .isInteger(flightcapacity)))
         throw new error("The capacity of the flight must be a positive integer value");
         console.log(numberofpassengers, flightcapacity);
     }
