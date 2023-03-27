@@ -1,11 +1,11 @@
 function Util() {
     calculateTotalDistributedPassengers(distributeAllSeatsToAllPassengers()){
 
-    }
-   return calculateTotalDistributedPassengers();    
+    
+   return calculateTotalDistributedPassengers()   
     }
 function calculateTotalNumberOfPassengers(){
 
-    return calculateTotalNumberOfPassengers();
+    return calculateTotalNumberOfPassengers()
 }
-
+}

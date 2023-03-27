@@ -4,9 +4,9 @@ function Flights() {
    function calculateNumberOfFlights(numberofpassengers, flightcapacity){
     try{
         if (numberofpassengers >= 0)
-        throw("The number of passengers must be a positive integer value");
+        throw new error("The number of passengers must be a positive integer value");
         if (flightcapacity >= 0)
-        throw("The capacity of the flight must be a positive integer value");
+        throw new error("The capacity of the flight must be a positive integer value");
         console.log(numberofpassengers, flightcapacity);
     }
     catch(error){
@@ -28,7 +28,7 @@ function checkAircraftRevision(g,y){
     return ("The revision needs to be done within the next month")
  }
  else (tot>g){
-    throw (error);
+    throw (error)
  }
 }
 catch(error){
