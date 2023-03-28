@@ -3,7 +3,7 @@ function Util() {
     calculateTotalDistributedPassengers(distributeAllSeatsToAllPassengers()){
 
     
-    }
+    };
     return calculateTotalDistributedPassengers()   
 
 function calculateTotalNumberOfPassengers(){
@@ -15,7 +15,7 @@ checkInput(input){
     if ((input .value .length ==0) && (input .value == !NaN)){
         throw new error('enter a value');
     }
-}
+};
 return false;
 function calculateTotalDistance(arr){
  let sum=0;
@@ -32,7 +32,7 @@ let buspoints = bs * bonp;
 let ecopoints = es * ecobonp;
 let totdist = calculateTotalDistance();
 let totbonpoints = buspoints + ecopoints
-}
+};
 return totbonpoints calculateBonusPoints();
 
 }

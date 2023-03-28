@@ -27,8 +27,8 @@ function checkAircraftRevision(g,y){
     return ("The revision needs to be done within the next month")
  }
  else (tot>g){
-    throw (error)
- }
+    throw new error (error)
+ };
 }
 catch(error){
     console/log(error);

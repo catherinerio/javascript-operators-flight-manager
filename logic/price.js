@@ -1,5 +1,5 @@
-f"use strict"
-unction Prices() {
+"use strict"
+function Prices() {
 function calculateFinalPrice(basePrice, variationpass, variationFlight){
 let redfinal = (basePrice - variationpass% * basePrice - variationFlight * (basePrice - variationpass% * basePrice)) .toFixed(2);
 let incfinal = (basePrice + variationpass% * basePrice - variationFlight * (basePrice + variationpass% * basePrice)) .toFixed(2);
@@ -8,11 +8,11 @@ let incfinal = (basePrice + variationpass% * basePrice - variationFlight * (base
 return {calculateFinalPrice};
 calculateDefaultFinalPrice(bp, pt, ft){
 
-}
+};
 return {calculateDefaultFinalPrice};
 calculateTotalFinalPrice(noofseats, passtype, flighttype, basprice){
  let appo = (noofseats * calculateDefaultFinalPrice(bp, pt, ft))
-}
+};
 return {calculateTotalFinalPrice};
 
 
