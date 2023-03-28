@@ -7,7 +7,7 @@ let incfinal = (basePrice + variationpass% * basePrice - variationFlight * (base
 }
 return {calculateFinalPrice};
 calculateDefaultFinalPrice(bp, pt, ft){
-
+let defp1= (bp - 
 };
 return {calculateDefaultFinalPrice};
 calculateTotalFinalPrice(noofseats, passtype, flighttype, basprice){
