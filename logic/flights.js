@@ -28,7 +28,7 @@ function checkAircraftRevision(g,y){
  }
  else (tot>g){
     throw new error (error)
- };
+ }
 }
 catch(error){
     console/log(error);
