@@ -26,9 +26,9 @@ function checkAircraftRevision(g,y){
  else if(tot>(3*g) && (tot<=g)){
     return ("The revision needs to be done within the next month")
  }
- else (tot>g){
+ else (tot>g)
     throw new error (error)
- }
+
 }
 catch(error){
     console/log(error);

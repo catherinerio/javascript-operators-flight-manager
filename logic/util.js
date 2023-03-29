@@ -1,6 +1,6 @@
 "use strict"
 function Util() {
-    calculateTotalDistributedPassengers(distributeAllSeatsToAllPassengers()){
+    calculateTotalDistributedPassengers(distributeAllSeatsToAllPassengers());{
 
     
     };
@@ -11,7 +11,7 @@ function calculateTotalNumberOfPassengers(){
 }
 return {calculateTotalNumberOfPassengers};
 
-checkInput(input){
+checkInput(input);{
     if ((input .value .length ==0) && (input .value == !NaN)){
         throw new error('enter a value');
     }
@@ -33,7 +33,7 @@ let ecopoints = es * ecobonp;
 let totdist = calculateTotalDistance();
 let totbonpoints = buspoints + ecopoints
 };
-return totbonpoints calculateBonusPoints();
+return {totbonpoints, calculateBonusPoints};
 
 }
 
